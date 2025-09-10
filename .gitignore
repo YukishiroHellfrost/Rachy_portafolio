@@ -1,0 +1,33 @@
+## Ignorar TODOS los bin/ y obj/ en cualquier subdirectorio ##
+**/bin/
+**/obj/
+**/node_modules/
+
+## Archivos de compilación ##
+*.dll
+*.pdb
+*.exe
+*.cache
+
+## Configuraciones de usuario ##
+appsettings.Development.json
+
+## Proyectos de tests (ignorar completamente) ##
+FinanzasUne.Tests/
+Test/
+
+## Archivos de IDE/Editor ##
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+
+## wwwroot/lib - Librerías frontend (usualmente se restauran) ##
+wwwroot/lib/
+
+## Otros ##
+*.log
+*.tmp
+.DS_Store
