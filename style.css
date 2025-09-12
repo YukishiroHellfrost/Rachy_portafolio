@@ -1,0 +1,68 @@
+/* Importaciones desde Google Fonts */
+@font-face {
+  font-family: 'Rubik Dirt';
+  font-style: normal;
+  src: url('./fonts/RubikDirt-Regular.ttf') format('truetype');
+}
+/* Estilos generales */
+.titulo-seccion {
+    font-size: 2.5rem;
+    font-family: 'Rubik Dirt', cursive, sans-serif;
+        font-family: 'Rubik Dirt', cursive, sans-serif;
+
+}
+/* Rachy red dark theme */
+:root {
+    --bg-primary: black;
+    --text-primary: white;
+    --bg-secondary: white;
+    --text-secondary: black;
+  }
+  
+  .all-dark {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+  }
+  /* Estilos para la barra de navegación en modo oscuro */
+  .navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .navbar-dark .navbar-nav .nav-link:hover,
+  .navbar-dark .navbar-nav .nav-link:focus {
+    color: rgba(255, 255, 255, 1);
+  }
+  
+  
+  /* Rachy blue light theme */
+  .all-light {
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+  }
+  /* HERO */
+  .seccion-hero{
+    padding: 10px;
+    margin: 5px;
+  }
+  .seccion-hero img{
+    max-width: 250px;
+    max-height: 250px;
+    width: 300px;
+    height: 300px;
+  }
+  .seccion-sobre-mi{
+    padding: 10px;
+    margin: 5px;
+  }
+  .seccion-sobre-mi img{
+    width: 100px;
+    height: 100px;
+  }
+  @media screen and (min-width:500px) {
+   
+  }
+
+  /* Para asegurar que todos los textos sean visibles */
+  body * {
+    color: inherit;
+  }
