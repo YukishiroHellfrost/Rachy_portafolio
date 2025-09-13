@@ -13,6 +13,9 @@
     <link rel="icon" class="rounded-circle" type="image/x-ico" href="images/OIP (10).jpg">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Bootstrap-icons -->
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
     <!-- Styles Css -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -48,26 +51,90 @@
 <section id="hero" class="mt-3 seccion-hero text-center align-items-center">
     <div class="container">
 
-        <img class="rounded-circle" src="images/Rachy-profile.jpg" alt="">
+        <img class="rounded-circle" src="images/Rachy-subProfile.jpg" alt="">
         <h1 class="titulo-seccion">Hola, soy Rachelys Hung!</h1>
         <h2>Soy una artista con experiencia en dibujo y animación</h2>
     </div>
 </section>
-<!-- Proyectos -->
- <section> </section>
+<!-- Proyectos --> 
+<section class="seccion-proyectos mt-4"id="proyectos">
+    <div class="container-fluid menu-filter  justify-items-center align-content-center mt-2">
+           <button class="btn btn-dark   active">Dibujos</button>
+           <button class="btn btn-dark  active">Animaciones</button>
+</div>
+<div class="container-fluid text-center justify-content-center align-content-center contenedor-dibujos mt-1">
+    <!-- Dibujos -->
+    <h1>Mis Dibujos</h1>
+    <!-- Primera Fila de fotos -->
+   <div class="row">
+    <div class="col-md-4 col-sm-12">
+        <img src="images/Dibujo-1.jpg" alt="">
+    </div>
+    <div class="col-md-4 col-sm-12">
+        <img src="images/Dibujo-2.jpg" alt="">
+    </div>
+    <div class="col-md-4 col-sm-12 ">
+        <img src="images/Dibujo-3.jpg" alt="">
+    </div>
+   </div>
+
+   <!-- Segunda Fila de fotos -->
+   <div class="row">
+    <div class="col-md-4 col-sm-12">
+        <img src="images/Dibujo-1.jpg" alt="">
+    </div>
+    <div class="col-md-4 col-sm-12">
+        <img src="images/Dibujo-2.jpg" alt="">
+    </div>
+    <div class="col-md-4 col-sm-12 ">
+        <img src="images/Dibujo-3.jpg" alt="">
+    </div>
+   </div>
+
+   <!-- Tercera Fila de fotos -->
+   <div class="row ultima-fila">
+    <div class="col-md-4 col-sm-12">
+        <img src="images/Dibujo-4.jpg" alt="">
+    </div>
+    <div class="col-md-4 col-sm-12">
+        <img src="images/Dibujo-5.jpg" alt="">
+    </div>
+    <div class="col-md-4 col-sm-12 ">
+        <img src="images/Dibujo-6.jpg" alt="">
+    </div>
+   </div>
+</div>
+<!-- Animaciones -->
+ </section>
 <!-- Sobre mi -->
 <section class="seccion-sobre-mi" id="sobre-mi">
 <div class="container text-center justify-content-start">
-    <div class="container p-5">
             <h1 class="text-start titulo-seccion">Sobre Mí</h1>
-                <img class="rounded-circle m-3" src="images/22-11-31-EZmNHzIXQAIHVar.jpg" alt="">
+                <img class="rounded-circle m-3" src="images/Rachy-profile.jpg" alt="">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta inventore exercitationem sed aperiam voluptatem vero soluta quam consectetur quae, porro delectus harum minus maiores sit distinctio fugit aut aspernatur quo dignissimos natus excepturi veritatis autem? Fugiat in eligendi consectetur quo non, modi distinctio explicabo similique sed quis officia error repellendus!</p>
-    </div>
 </div>
 </section>
- <section class="seccion-proyectos">
+<!-- Contactame -->
+ <section id="contacto"></section>
+ <!-- Footer -->
+ <footer id="footer" class="d-flex flex-column align-items-center justify-content-center">
+  <div class="iconos-redes-sociales d-flex flex-wrap align-item-center justify-content-center">
+     <a href="https://github.com/freecodecampES" target="_blank" rel="noopener norefer">
+      <i class="bi bi-github"></i>
+    </a>
+     <a href="https://linkedin.com/" target="_blank" rel="noopener norefer">
+      <i class="bi bi-linkedin"></i>
+    </a>
+     <a href="https://instagram.com/freecodecampES" target="_blank" rel="noopener norefer">
+      <i class="bi bi-instagram"></i>
+    </a>
+  </div>
+  <div class="derechos-de-autor">
+    Creado por Rafael Couso &#169; (2025)
+  </div>
+  </footer>
 
- </section>
+
     <!-- jQuery desde node_modules (PRIMERO) -->
     <script src="./node_modules/jquery/dist/jquery.min.js"></script> 
     <!-- Bootstrap JS (SEGUNDO) -->

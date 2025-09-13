@@ -4,6 +4,11 @@
   font-style: normal;
   src: url('./fonts/RubikDirt-Regular.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  src: url('./fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
+}
 /* Estilos generales */
 .titulo-seccion {
     font-size: 2.5rem;
@@ -45,23 +50,81 @@
     margin: 5px;
   }
   .seccion-hero img{
-    max-width: 250px;
-    max-height: 250px;
-    width: 300px;
-    height: 300px;
+    max-width: 500px;
+    max-height: 500px;
+
   }
+  /* Sobre mi */
   .seccion-sobre-mi{
     padding: 10px;
     margin: 5px;
   }
   .seccion-sobre-mi img{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
   }
-  @media screen and (min-width:500px) {
+  /* Seccion Proyectos */
+  .contenedor-dibujos .row .col{
+    max-width: 350px;
+    max-height: 500px;
+    cursor: pointer;
+  
+  }
+  .contenedor-dibujos img{
+    width: 100%;
+    height: 90%;
+    margin-bottom: 40px;
+    border: 7px solid white;
+    border-radius: 5%;
+  }
+  /* Footer */
+  footer{
+    min-height: 100px;
+    background-color: rgb(128, 9, 9);
+}
+.footer-icono{
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    height: 80px;
+    width: 80px;
+    margin: 5px;
+}
+footer-texto{
+    font-size: 1,5rem;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: 'Quicksand';
+}
+.iconos-redes-sociales i{
+margin:5px;
+font-size: 35px;
+transition:all 0.2s ease-in;
+}
+.iconos-redes-sociales i:hover{
+    color: white;
+}
+.derechos-de-autor{
+    font-size: 15px;
+    color:#aeaeae;
+    
+}
+  @media screen and (max-width:768px) {
+   .ultima-fila{
+    display: none;
+   }
    
-  }
+  .seccion-hero img{
+    max-width: 300px;
+    max-height: 300px;
 
+  }
+  .contenedor-dibujos .row .col{
+    max-width: 350px;
+    max-height: 200px
+  }
+  }
+  
   /* Para asegurar que todos los textos sean visibles */
   body * {
     color: inherit;
