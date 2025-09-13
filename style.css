@@ -67,7 +67,6 @@
   .contenedor-dibujos .row .col{
     max-width: 350px;
     max-height: 500px;
-    cursor: pointer;
   
   }
   .contenedor-dibujos img{
@@ -76,6 +75,8 @@
     margin-bottom: 40px;
     border: 7px solid white;
     border-radius: 5%;
+    cursor: pointer;
+
   }
   /* Footer */
   footer{
@@ -90,12 +91,7 @@
     width: 80px;
     margin: 5px;
 }
-footer-texto{
-    font-size: 1,5rem;
-    padding: 10px;
-    margin-bottom: 10px;
-    font-family: 'Quicksand';
-}
+
 .iconos-redes-sociales i{
 margin:5px;
 font-size: 35px;
@@ -114,17 +110,71 @@ transition:all 0.2s ease-in;
     display: none;
    }
    
-  .seccion-hero img{
-    max-width: 300px;
-    max-height: 300px;
 
-  }
   .contenedor-dibujos .row .col{
-    max-width: 350px;
+    max-width: 250px;
     max-height: 200px
   }
   }
+  @media screen and (max-width:500px) {
+    .seccion-hero img{
+      max-width: 250px;
+      max-height: 250px;
   
+    }
+  
+  }
+  @media screen and (min-width:1000px) {
+     p{
+      font-size: 1.5rem;
+  
+    }
+    h1{
+      font-size: 2.5rem;
+    }
+    h2{
+      font-size: 2.1rem;
+    }
+  }
+  @media screen and (min-width:2000px){
+    p{
+      font-size: 60px;
+      width: 100%;
+  
+    }
+    .seccion-hero img{
+      max-width: 950px;
+      max-height: 950px;
+  
+    }
+    nav{
+      height: 200px;
+      font-size: 50px;
+    }
+    nav img{
+      height: 150px;
+      width: 150px;
+    }
+    nav a{
+      margin: 3px;
+    }
+    .seccion-sobre-mi img{
+      width:400px;
+      height: 400px;
+    }
+    .titulo-seccion {
+      font-size: 100px;
+      font-family: 'Rubik Dirt', cursive, sans-serif;
+          font-family: 'Rubik Dirt', cursive, sans-serif;
+  
+  }
+  h1{
+    font-size: 100px;
+  }
+    h2{
+      font-size: 75px;
+    }
+  }
   /* Para asegurar que todos los textos sean visibles */
   body * {
     color: inherit;
