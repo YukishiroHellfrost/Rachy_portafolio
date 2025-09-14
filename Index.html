@@ -58,93 +58,157 @@
 </section>
 <!-- Proyectos --> 
 <section class="seccion-proyectos mt-4"id="proyectos">
-    <div class="container-fluid menu-filter  justify-items-center align-content-center mt-2">
-           <button class="btn btn-dark   active">Dibujos</button>
-           <button class="btn btn-dark  active">Animaciones</button>
-</div>
-<div class="container-fluid text-center justify-content-center align-content-center contenedor-dibujos mt-1">
-    <!-- Dibujos -->
+    <div class="container-fluid menu-filter justify-content-center align-content-center mt-2 text-center">
+        <div class="tabs-container d-inline-flex rounded overflow-hidden">
+            <button class="tab-button active" data-target="dibujos">Dibujos</button>
+            <button class="tab-button" data-target="animaciones">Animaciones</button>
+        </div>
+    </div>
+    <div class="tab-content active" id="contenido-dibujos">
+        <div class="container-fluid text-center justify-content-center align-content-center contenedor-dibujos mt-1">    <!-- Dibujos -->
     <h1>Mis Dibujos</h1>
     <!-- Primera Fila de fotos -->
    <div class="row">
     <div class="col-md-4 col-sm-12">
-        <img src="images/Dibujo-1.jpg" alt="">
+         <div class="image-container">
+             <img src="images/Dibujo-1.jpg" alt="">
+         </div>
     </div>
     <div class="col-md-4 col-sm-12">
-        <img src="images/Dibujo-2.jpg" alt="">
+         <div class="image-container">
+             <img src="images/Dibujo-2.jpg" alt="">
+         </div>
     </div>
     <div class="col-md-4 col-sm-12 ">
-        <img src="images/Dibujo-3.jpg" alt="">
+         <div class="image-container">
+             <img src="images/Dibujo-3.jpg" alt="">
+         </div>
     </div>
    </div>
 
    <!-- Segunda Fila de fotos -->
    <div class="row">
     <div class="col-md-4 col-sm-12">
-        <img src="images/Dibujo-1.jpg" alt="">
+         <div class="image-container">
+             <img src="images/Dibujo-1.jpg" alt="">
+         </div>
     </div>
     <div class="col-md-4 col-sm-12">
-        <img src="images/Dibujo-2.jpg" alt="">
+         <div class="image-container">
+             <img src="images/Dibujo-2.jpg" alt="">
+         </div>
     </div>
     <div class="col-md-4 col-sm-12 ">
-        <img src="images/Dibujo-3.jpg" alt="">
+         <div class="image-container">
+             <img src="images/Dibujo-3.jpg" alt="">
+         </div>
     </div>
    </div>
 
    <!-- Tercera Fila de fotos -->
    <div class="row ultima-fila">
     <div class="col-md-4 col-sm-12">
-        <img src="images/Dibujo-4.jpg" alt="">
+        <div class="image-container">
+            <img src="images/Dibujo-4.jpg" alt="">
+        </div>
     </div>
     <div class="col-md-4 col-sm-12">
-        <img src="images/Dibujo-5.jpg" alt="">
+        <div class="image-container">
+            <img src="images/Dibujo-5.jpg" alt="">
+        </div>
     </div>
     <div class="col-md-4 col-sm-12 ">
-        <img src="images/Dibujo-6.jpg" alt="">
+<div class="image-container">
+    <img src="images/Dibujo-6.jpg" alt="">
+</div>
     </div>
    </div>
 </div>
+</div>
 <!-- Animaciones -->
-<div class="container-fluid text-center justify-content-center align-content-center contenedor-dibujos mt-1">
-    <h1>Mis Animaciones</h1>
-    <!-- Primera Fila de fotos -->
-   <div class="row">
-    <div class="col-md-4 col-sm-12">
-        <img src="images/Dibujo-1.jpg" alt="">
+<div class="tab-content" id="contenido-animaciones">
+    <div class="container-fluid text-center justify-content-center align-content-center contenedor-animaciones mt-1">
+        <h1>Mis Animaciones</h1>
+        <!-- Primera Fila de videos -->
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <div class="video-container">
+                    <video loop muted preload="metadata" poster="videos/poster1.jpg">
+                        <source src="videos/animacion1.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                    <div class="video-overlay">
+                        <i class="bi bi-play-circle-fill play-icon"></i>
+                    </div>
+                </div>
+                <h3>Animación 1</h3>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="video-container">
+                    <video loop muted preload="metadata" poster="videos/poster2.jpg">
+                        <source src="videos/animacion2.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                    <div class="video-overlay">
+                        <i class="bi bi-play-circle-fill play-icon"></i>
+                    </div>
+                </div>
+                <h3>Animación 2</h3>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="video-container">
+                    <video loop muted preload="metadata" poster="videos/poster3.jpg">
+                        <source src="videos/animacion3.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                    <div class="video-overlay">
+                        <i class="bi bi-play-circle-fill play-icon"></i>
+                    </div>
+                </div>
+                <h3>Animación 3</h3>
+            </div>
+        </div>
+        
+        <!-- Segunda Fila de videos -->
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <div class="video-container">
+                    <video loop muted preload="metadata" poster="videos/poster4.jpg">
+                        <source src="videos/animacion4.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                    <div class="video-overlay">
+                        <i class="bi bi-play-circle-fill play-icon"></i>
+                    </div>
+                </div>
+                <h3>Animación 4</h3>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="video-container">
+                    <video loop muted preload="metadata" poster="videos/poster5.jpg">
+                        <source src="videos/animacion5.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                    <div class="video-overlay">
+                        <i class="bi bi-play-circle-fill play-icon"></i>
+                    </div>
+                </div>
+                <h3>Animación 5</h3>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="video-container">
+                    <video loop muted preload="metadata" poster="videos/poster6.jpg">
+                        <source src="videos/animacion6.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                    <div class="video-overlay">
+                        <i class="bi bi-play-circle-fill play-icon"></i>
+                    </div>
+                </div>
+                <h3>Animación 6</h3>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4 col-sm-12">
-        <img src="images/Dibujo-2.jpg" alt="">
-    </div>
-    <div class="col-md-4 col-sm-12 ">
-        <img src="images/Dibujo-3.jpg" alt="">
-    </div>
-   </div>
-
-   <!-- Segunda Fila de fotos -->
-   <div class="row">
-    <div class="col-md-4 col-sm-12">
-        <img src="images/Dibujo-1.jpg" alt="">
-    </div>
-    <div class="col-md-4 col-sm-12">
-        <img src="images/Dibujo-2.jpg" alt="">
-    </div>
-    <div class="col-md-4 col-sm-12 ">
-        <img src="images/Dibujo-3.jpg" alt="">
-    </div>
-   </div>
-
-   <!-- Tercera Fila de fotos -->
-   <div class="row ultima-fila">
-    <div class="col-md-4 col-sm-12">
-        <img src="images/Dibujo-4.jpg" alt="">
-    </div>
-    <div class="col-md-4 col-sm-12">
-        <img src="images/Dibujo-5.jpg" alt="">
-    </div>
-    <div class="col-md-4 col-sm-12 ">
-        <img src="images/Dibujo-6.jpg" alt="">
-    </div>
-   </div>
 </div>
  </section>
 <!-- Sobre mi -->
@@ -159,7 +223,10 @@
  <section id="contacto"></section>
  <!-- Footer -->
  <footer id="footer" class="d-flex flex-column align-items-center justify-content-center">
-  <div class="iconos-redes-sociales d-flex flex-wrap align-item-center justify-content-center">
+     <div class="derechos-de-autor">
+       Creado por Rafael Couso &#169; (2025)
+     </div>
+     <div class="iconos-redes-sociales d-flex flex-wrap align-item-center justify-content-center">
      <a href="https://github.com/freecodecampES" target="_blank" rel="noopener norefer">
       <i class="bi bi-github"></i>
     </a>
@@ -170,9 +237,6 @@
       <i class="bi bi-instagram"></i>
     </a>
   </div>
-  <div class="derechos-de-autor">
-    Creado por Rafael Couso &#169; (2025)
-  </div>
   </footer>
 
 
@@ -180,5 +244,7 @@
     <script src="./node_modules/jquery/dist/jquery.min.js"></script> 
     <!-- Bootstrap JS (SEGUNDO) -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Nuestro archivo JS personalizado -->
+    <script src="app.js"></script>
 </body>
 </html>
