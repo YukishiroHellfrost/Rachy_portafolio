@@ -4,12 +4,22 @@
   font-style: normal;
   src: url('./fonts/RubikDirt-Regular.ttf') format('truetype');
 }
+
 @font-face {
   font-family: 'Quicksand';
   font-style: normal;
   src: url('./fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
 }
+
+@font-face {
+font-family: 'Share Tech Mono';
+font-style: normal;
+src: url('./fonts/ShareTechMono-Regular.ttf') format('truetype');
+}
 /* Estilos generales */
+.my-icon{
+  border-radius: 50%;
+}
 .titulo-seccion {
     font-size: 2.5rem;
     font-family: 'Rubik Dirt', cursive, sans-serif;
@@ -18,7 +28,7 @@
 }
 /* Rachy red dark theme */
 :root {
-    --bg-primary: black;
+    --bg-primary: rgb(29, 27, 27);
     --text-primary: white;
     --bg-secondary: white;
     --text-secondary: black;
@@ -32,7 +42,14 @@
   .navbar-dark .navbar-nav .nav-link {
     color: rgba(255, 255, 255, 0.8);
   }
-  
+  nav{
+    border-bottom: 5px solid rgb(36, 34, 34);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 4px;
+    box-shadow: 10px  solid #4b4848;
+    position: absolute;
+
+  }
   .navbar-dark .navbar-nav .nav-link:hover,
   .navbar-dark .navbar-nav .nav-link:focus {
     color: rgba(255, 255, 255, 1);
@@ -211,11 +228,63 @@
     margin-top: 15px;
     font-size: 1.2rem;
 }
+/* Carrusel de imagenes y videos */
+/* Estilos para el modal del carrusel */
+.modal-content.bg-dark {
+  background-color: rgba(0, 0, 0, 0.95) !important;
+  border: 1px solid #444;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  width: 5%;
+  opacity: 0.7;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  opacity: 1;
+}
+
+/* Asegurar que los medios en el carrusel se vean bien */
+.carousel-item img,
+.carousel-item video {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Estilos para el título del modal */
+.modal-title {
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+/* Mejorar la accesibilidad */
+.modal {
+  backdrop-filter: blur(5px);
+}
+/* Contacto */
+.video-contacto{
+  max-height: 150px;
+  object-fit: none;
+}
+
+.contenedor-contacto i{
+ font-size: 50px;
+}
+#contacto{
+  font-family: 'Share Tech Mono';
+
+}
   /* Footer */
   footer{
     min-height: 100px;
-    background-color: rgb(128, 9, 9);
 }
+
 .footer-icono{
     flex-direction: row;
     justify-content: center;
@@ -258,6 +327,13 @@ transition:all 0.2s ease-in;
   
   }
   @media screen and (min-width:1000px) {
+    .derechos-de-autor{
+      font-size: 40px;
+    }
+    .iconos-redes-sociales i{
+      font-size: 100px;
+
+    }
      p{
       font-size: 1.5rem;
   
@@ -270,6 +346,16 @@ transition:all 0.2s ease-in;
     }
   }
   @media screen and (min-width:2000px){
+    .video-contacto video{
+      max-height: 500px;
+      max-width: 600px;
+    }
+    button{
+      min-height: 100px;
+      min-width: 150px;
+      font-size: 30px;
+
+    }
     p{
       font-size: 60px;
       width: 100%;
