@@ -18,9 +18,9 @@
     <!-- Styles Css -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="all-dark">
+<body class="all-dark"  data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="80" tabindex="0">
     <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
         
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -31,15 +31,33 @@
             </button>
             <div class="collapse navbar-collapse" id="navbar-toggler">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#sobre-mi">Sobre mí</a>
-                    </li>
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="#proyectos">Proyectos</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link active" href="#sobre-mi">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a
+                          class="nav-link dropdown-toggle"
+                          href="#"
+                          id="langDropdown"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <i class="bi bi-translate"></i>
+                          <span id="current-lang">ES</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
+                          <li><a class="dropdown-item lang-select" href="#" data-lang="es">Español</a></li>
+                          <li><a class="dropdown-item lang-select" href="#" data-lang="en">English</a></li>
+                        </ul>
+                      </li>
                 </ul>
             </div>
         </div>
@@ -130,7 +148,7 @@
         <div class="row">
             <div class="col-md-4 col-sm-12">
                 <div class="video-container">
-                    <video loop muted preload="metadata" poster="videos/poster1.jpg">
+                    <video loop muted playsinline preload="metadata" poster="videos/poster1.jpg">
                         <source src="videos/animacion1.mp4" type="video/mp4">
                         Tu navegador no soporta el elemento de video.
                     </video>
@@ -142,7 +160,7 @@
             </div>
             <div class="col-md-4 col-sm-12">
                 <div class="video-container">
-                    <video loop muted preload="metadata" poster="videos/poster2.png">
+                    <video loop muted playsinline preload="metadata" poster="videos/poster2.png">
                         <source src="videos/animacion2.mp4" type="video/mp4">
                         Tu navegador no soporta el elemento de video.
                     </video>
@@ -154,7 +172,7 @@
             </div>
             <div class="col-md-4 col-sm-12">
                 <div class="video-container">
-                    <video loop muted preload="metadata" poster="videos/poster3.png">
+                    <video loop muted playsinline preload="metadata" poster="videos/poster3.png">
                         <source src="videos/animacion3.mp4" type="video/mp4">
                         Tu navegador no soporta el elemento de video.
                     </video>
@@ -170,7 +188,7 @@
         <div class="row">
             <div class="col-md-4 col-sm-12">
                 <div class="video-container">
-                    <video loop muted preload="metadata" poster="videos/poster4.png">
+                    <video loop muted playsinline preload="metadata"poster="videos/poster4.png">
                         <source src="videos/animacion4.mp4" type="video/mp4">
                         Tu navegador no soporta el elemento de video.
                     </video>
@@ -182,7 +200,7 @@
             </div>
             <div class="col-md-4 col-sm-12">
                 <div class="video-container">
-                    <video loop muted preload="metadata" poster="videos/poster5.png">
+                    <video loop muted playsinline preload="metadata" poster="videos/poster5.png">
                         <source src="videos/animacion5.mp4" type="video/mp4">
                         Tu navegador no soporta el elemento de video.
                     </video>
@@ -194,7 +212,7 @@
             </div>
             <div class="col-md-4 col-sm-12">
                 <div class="video-container">
-                    <video loop muted preload="metadata" poster="videos/poster6.png">
+                    <video loop muted playsinline preload="metadata" poster="videos/poster6.png">
                         <source src="videos/animacion6.mp4" type="video/mp4">
                         Tu navegador no soporta el elemento de video.
                     </video>
@@ -213,7 +231,7 @@
 <div class="container-fluid text-center justify-content-start">
             <h1 class="text-start titulo-seccion">Sobre Mí</h1>
                 <img class="rounded-circle m-3" src="images/Rachy-profile.jpg" alt="">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta inventore exercitationem sed aperiam voluptatem vero soluta quam consectetur quae, porro delectus harum minus maiores sit distinctio fugit aut aspernatur quo dignissimos natus excepturi veritatis autem? Fugiat in eligendi consectetur quo non, modi distinctio explicabo similique sed quis officia error repellendus!</p>
+                <p>Hola! soy Rachelys “Rachy” Hung, soy una artista visual especializada en <strong>dibujo y animación</strong> . Con <strong>experiencia</strong> colaborando con <strong>Kripta</strong>, fusiona influencias urbanas y mundos imaginarios en obras que destacan por su creatividad y técnica refinada. Apasionada por explorar nuevos lenguajes visuales, busca siempre innovar y emocionar.</p>
 </div>
 </section>
 <!-- Contactame -->
@@ -222,10 +240,10 @@
         <div class="row">
             <div class="col-md-4 col-sm-12 align-content-center justify-content-center contenedor-contacto">
                 <div class="video-container video-contacto ">
-                    <video loop muted preload="metadata">
-                        <source src="videos/Rachy-dibujando.mp4" type="video/mp4">
-                        Tu navegador no soporta el elemento de video.
-                    </video>
+                    <video loop muted playsinline preload="metadata">
+    <source src="videos/Rachy-dibujando.mp4" type="video/mp4">
+    Tu navegador no soporta el elemento de video.
+</video>
                     <div class="video-overlay">
                         <i class="bi bi-play-circle-fill play-icon"></i>
                     </div>
@@ -233,10 +251,12 @@
             </div>
             <div class="col-md-5 col-sm-12 text-center align-content-center">
                <p>Desarrollemos un proyecto juntos! Contáctame ya!</p> 
-               <i class="bi bi-arrow-right-circle-fill"></i>
+               <div class="contenedor floating">
+                   <i class="bi bi-arrow-right-circle-fill"></i>
+               </div>
             </div>
-            <div class="col-md-3 col-sm-12  align-content-center justify-content-center">
-                <div class="iconos-redes-sociales d-flex  d-flex flex-nowrap align-content-center justify-content-center flex-nowrap ">
+            <div class="col-md-3 col-sm-12  flex-nowrap align-content-center justify-content-center ">
+                <div class="iconos-redes-sociales d-flex justify-content-center">
                     <a href="https://facebook.com/freecodecampES" target="_blank" rel="noopener norefer">
                      <i class="bi bi-facebook"></i>
                    </a>
@@ -275,17 +295,16 @@
 
 <!-- Modal para el carrusel -->
 <div class="modal fade" id="mediaCarouselModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
         <div class="modal-content bg-dark">
-            <div class="modal-header border-0 pb-0">
+            <div class="modal-header border-0">
                 <h5 class="modal-title text-white" id="modalTitle"></h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body p-0">
-                <!-- Carrusel -->
-                <div id="mediaCarousel" class="carousel slide" data-bs-interval="false">
+                <div id="mediaCarousel" class="carousel slide">
                     <div class="carousel-inner" id="carousel-inner">
-                        <!-- Los elementos del carrusel se generarán dinámicamente con JavaScript -->
+                        <!-- Los elementos del carrusel se generarán dinámicamente -->
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#mediaCarousel" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -300,7 +319,6 @@
         </div>
     </div>
 </div>
-  
     <!-- jQuery desde node_modules (PRIMERO) -->
     <script src="./node_modules/jquery/dist/jquery.min.js"></script> 
     <!-- Bootstrap JS (SEGUNDO) -->
