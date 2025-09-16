@@ -1,21 +1,4 @@
-/* Importaciones desde Google Fonts */
-@font-face {
-  font-family: 'Rubik Dirt';
-  font-style: normal;
-  src: url('./fonts/RubikDirt-Regular.ttf') format('truetype');
-}
 
-@font-face {
-  font-family: 'Quicksand';
-  font-style: normal;
-  src: url('./fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
-}
-
-@font-face {
-font-family: 'Share Tech Mono';
-font-style: normal;
-src: url('./fonts/ShareTechMono-Regular.ttf') format('truetype');
-}
 /* Estilos generales */
 .my-icon{
   border-radius: 50%;
@@ -384,18 +367,11 @@ transition:all 0.2s ease-in;
 }
   @media screen and (max-width:768px) {
   /* NAVBAR */
-  nav.navbar {
-    padding: 0.5rem 1rem;
-  }
-  nav.navbar-brand img {
+ .navbar-brand img {
     width: 36px;
     height: 36px;
   }
-  .navbar-toggler {
-    width: 36px;
-    height: 36px;
-    padding: 0.25rem;
-  }
+
   .navbar-nav .nav-link {
     font-size: 0.9rem;
     padding: 0.4rem 0.6rem;
@@ -413,21 +389,14 @@ transition:all 0.2s ease-in;
 
 @media screen and (max-width:500px) {
   /* NAVBAR */
-  nav.navbar {
-    padding: 0.4rem 0.8rem;
-  }
+
   nav.navbar-brand img {
     width: 30px;
     height: 30px;
   }
-  .navbar-toggler {
-    width: 30px;
-    height: 30px;
-    padding: 0.2rem;
-  }
+  
   .navbar-nav .nav-link {
     font-size: 0.8rem;
-    padding: 0.3rem 0.5rem;
   }
 
   /* Tu código existente */
@@ -437,7 +406,7 @@ transition:all 0.2s ease-in;
   }
 }
 
-@media screen and (min-width:1000px) {
+@media screen and (min-width:1500px) {
   /* NAVBAR */
   nav.navbar {
     padding: 1rem 2rem;
@@ -456,7 +425,7 @@ transition:all 0.2s ease-in;
 
   /* Tu código existente */
   .derechos-de-autor {
-    font-size: 40px;
+    font-size: 20px;
   }
   .iconos-redes-sociales i {
     font-size: 50px;
@@ -477,6 +446,7 @@ transition:all 0.2s ease-in;
   nav.navbar {
     padding: 1.5rem 3rem;
   }
+
   nav.navbar-brand img {
     width: 80px;
     height: 80px;
@@ -511,17 +481,17 @@ transition:all 0.2s ease-in;
   
     }
     .seccion-hero img{
-      max-width: 950px;
-      max-height: 950px;
+      max-width: 200px;
+      max-height: 150px;
   
     }
     nav{
       height: 200px;
       font-size: 50px;
     }
-    nav img{
-      height: 150px;
-      width: 150px;
+    .navbar img{
+      min-height: 140px;
+      min-width: 140px;
     }
     nav a{
       margin: 3px;
